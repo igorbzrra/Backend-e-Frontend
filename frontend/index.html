@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Livros</title>
+</head>
+<body>
+    <h1>Pesquisa de Livros</h1>
+    <form id="add-book-form">
+        <h2>Adicionar Livros</h2>
+        <input type="text" id="titulo" placeholder="Titulo" required>
+        <input type="text" id="autor" placeholder="Autor" required>
+        <input type="text" id="isbn" placeholder="ISBN" required>
+        <button type="submit">Adicionar Livro</button>
+    </form>
+    <div id="actions">
+        <button id="list-books">Listar todos os Livros</button>
+        <p></p>
+        <input type="number" id="id-query" placeholder="ID do Livro">
+        <button id="get-by-id">Buscar pelo ID</button>
+        <p></p>
+        <input type="text" id="isbn-query" placeholder="ISBN">
+        <button id="get-by-isbn">Buscar pelo ISBN</button>
+        <p></p>
+        <input type="text" id="title-query" placeholder="Titulo">
+        <button id="get-by-title">Buscar pelo Title</button>
+    </div>
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
